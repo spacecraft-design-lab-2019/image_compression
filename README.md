@@ -16,7 +16,7 @@ There are 3 files in this repo:
 - TODO: convert this to regular python so it doesn't need to be run on a camera board. Did this in micropython so that the bytearray types and Image constructors would be same from DCT.py.
 - TODO: current demosaic method from Bayer to RGB just uses the R, G, or B value from a previous last value of each row within each 8x8 pixel tile. Could probably do something where you look at the R, G, or B values in the same column above and below each pixel. 
 
-3) image_reconstruct.py
+3) reconstruct_image.py
 
 - Meant to be run on the ground
 - Runs on your computer with regular python (not micropython)
