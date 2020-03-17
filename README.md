@@ -23,3 +23,4 @@ There are 3 files in this repo:
 - Reads the .png files from DCT_reconstruct.py and stitches the tiles together and saves the full .jpeg image
 
 Read comments in each script for more information. Much of the JPEG compression approach comes from here: https://en.wikipedia.org/wiki/JPEG. 
+Other potential idea is to use a JPEG parser that parses the information in a full JPEG file to find the relevant information that would be needed to reconstruct the image on the ground. 
