@@ -13,11 +13,9 @@ num_packets = 960
 m = 8 # size of blocks
 count = -1
 count_j = 0
-count_debug = 0
 for i in range(num_packets):
     for j in range(5):
         count += 1
-        count_debug += 1
         B  = img.imread('tile_from_packet' + str(i) + '_number_' + str(j) + '.png', format='jpeg')
         if count == 0:
             A = copy.deepcopy(B)
@@ -33,6 +31,6 @@ for i in range(num_packets):
             count = -1
         else:
             A = np.vstack((A,B))
-print(count_debug)
+
 
 img.imsave('picture_out_reconstructed.jpeg', C)
